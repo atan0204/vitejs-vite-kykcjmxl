@@ -77,10 +77,11 @@
   align-items: center;
   column-gap: 6rem;
   display: grid;
-  grid-template-columns: minmax(280px, 39%) minmax(280px, 1fr);
+  grid-template-columns: minmax(280px, 18rem) minmax(280px, 32rem);
+  justify-content: center;
   margin: 0 auto;
   max-width: 1298px;
-  padding: 2.75rem 2rem 8.75rem;
+  padding: 5.25rem 2rem 6.75rem;
 }
 
 .featured-release__art {
@@ -152,7 +153,7 @@
 .about-section {
   background: url('/About section bg.jpg') center / 100% 100% no-repeat;
   color: #181616;
-  margin: 2rem 0 0;
+  margin: 0;
 }
 
 .about-section__inner {
@@ -172,7 +173,7 @@
 .music-section {
   background: #181616 url('/music bg.jpeg') center top / cover no-repeat;
   overflow-x: hidden;
-  padding: 7rem 0 2rem;
+  padding: 7rem 0;
 }
 
 .section-heading {
@@ -477,7 +478,7 @@
   }
 
   .about-section {
-    margin: 1rem 0;
+    margin: 0;
   }
 
   .about-section__inner {

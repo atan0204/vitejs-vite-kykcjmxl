@@ -1,0 +1,10 @@
+.video-library {
+  background: var(--clr-white);
+  padding: 6rem 0 7rem;
+}
+
+@media (max-width: 640px) {
+  .video-library {
+    padding: var(--space-9) 0;
+  }
+}

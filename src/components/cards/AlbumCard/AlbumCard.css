@@ -1,0 +1,79 @@
+.album-card {
+  align-items: center;
+  background: var(--clr-dark);
+  border-radius: var(--radius-lg);
+  color: var(--clr-white);
+  display: grid;
+  gap: var(--space-6);
+  grid-template-columns: minmax(150px, 12rem) minmax(0, 1fr);
+  height: 100%;
+  padding: 1.75rem 1.5rem;
+}
+
+/* Visual */
+.album-card-visual {
+  overflow: hidden;
+  position: relative;
+}
+
+.album-card-visual > img {
+  display: block;
+  width: 100%;
+}
+
+/* Body */
+.album-card-body {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+}
+
+.album-card-year {
+  color: var(--clr-accent);
+  font-family: var(--ff-body);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+  letter-spacing: 0.06em;
+  margin-bottom: var(--space-2);
+  text-transform: uppercase;
+}
+
+.album-card-title {
+  font-family: var(--ff-body);
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-tight);
+  margin-bottom: var(--space-4);
+  overflow-wrap: anywhere;
+}
+
+.album-card-desc {
+  color: var(--clr-white);
+  font-family: var(--ff-body);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-light);
+  line-height: 1.6;
+  margin-bottom: var(--space-7);
+  max-width: 20.5rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .album-card {
+    gap: var(--space-4);
+    grid-template-columns: 9rem 1fr;
+    padding: 1.4rem 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .album-card {
+    grid-template-columns: 6.6rem 1fr;
+  }
+
+  .album-card-title {
+    font-size: 0.9rem;
+  }
+}

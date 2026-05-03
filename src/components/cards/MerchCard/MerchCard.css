@@ -1,0 +1,42 @@
+.merch-card {
+  border: 0.5px solid var(--clr-card-border);
+  padding: 0 1.75rem 1.5rem;
+  text-align: center;
+}
+
+.merch-card-image-wrap {
+  align-items: center;
+  display: flex;
+  height: 19rem;
+  justify-content: center;
+}
+
+.merch-card-image-wrap img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.merch-card-title {
+  font-family: var(--ff-body);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-tight);
+  margin-bottom: 0.35rem;
+}
+
+.merch-card-price {
+  font-family: var(--ff-body);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-medium);
+}
+
+@media (max-width: 640px) {
+  .merch-card-title {
+    font-size: 0.9rem;
+  }
+
+  .merch-card-price {
+    font-size: var(--fs-base);
+  }
+}

@@ -1,0 +1,12 @@
+.logo {
+  color: var(--clr-brand);
+  font-family: var(--ff-script);
+  font-size: var(--fs-brand);
+  line-height: 1;
+  text-decoration: none;
+  transition: opacity var(--dur-fast) var(--ease-out);
+}
+
+.logo:hover {
+  opacity: 0.85;
+}

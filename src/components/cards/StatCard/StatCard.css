@@ -1,0 +1,38 @@
+.stat-card {
+  padding: var(--space-7) var(--space-4);
+  text-align: center;
+}
+
+.stat-card-value {
+  color: var(--clr-accent);
+  display: block;
+  font-family: var(--ff-display);
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-bold);
+  line-height: 1;
+  margin-bottom: var(--space-2);
+}
+
+.stat-card-label {
+  color: var(--clr-muted);
+  display: block;
+  font-family: var(--ff-body);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-regular);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+  .stat-card {
+    padding: var(--space-4) var(--space-2);
+  }
+
+  .stat-card-value {
+    font-size: 1.5rem;
+  }
+
+  .stat-card-label {
+    font-size: var(--fs-xs);
+  }
+}

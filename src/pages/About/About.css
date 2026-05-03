@@ -1,0 +1,129 @@
+/* Stats strip */
+.about-stats {
+  background: var(--clr-surface);
+  padding: var(--space-7) var(--space-8);
+}
+
+.about-stats-grid {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  max-width: var(--container-max);
+}
+
+/* Bio body */
+.about-bio {
+  padding: var(--space-12) 0;
+}
+
+.about-bio-inner {
+  margin: 0 auto;
+  max-width: var(--container-max);
+  padding: 0 var(--space-8);
+}
+
+.about-bio-text {
+  margin-top: var(--space-9);
+  max-width: 48rem;
+}
+
+.about-bio-text p {
+  color: var(--clr-light);
+  font-family: var(--ff-body);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-light);
+  line-height: var(--lh-loose);
+  margin-bottom: var(--space-6);
+}
+
+/* Influences */
+.about-influences {
+  padding: var(--space-12) 0;
+}
+
+.about-influences-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  justify-content: center;
+  margin: var(--space-9) auto 0;
+  max-width: var(--container-max);
+  padding: 0 var(--space-8);
+}
+
+.about-influences-chip {
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-divider);
+  border-radius: var(--radius-pill);
+  color: var(--clr-light);
+  font-family: var(--ff-body);
+  font-size: var(--fs-sm);
+  padding: 0.5rem 1.25rem;
+  transition: background var(--dur-fast) var(--ease-out),
+              color var(--dur-fast) var(--ease-out);
+}
+
+.about-influences-chip:hover {
+  background: var(--clr-accent);
+  color: var(--clr-white);
+}
+
+/* CTA */
+.about-cta {
+  background: radial-gradient(ellipse at center, rgba(255, 56, 49, 0.1), transparent 70%);
+  padding: var(--space-12) var(--space-8);
+  text-align: center;
+}
+
+.about-cta-inner {
+  margin: 0 auto;
+  max-width: var(--container-max);
+}
+
+.about-cta-title {
+  font-family: var(--ff-display);
+  font-size: var(--fs-3xl);
+  margin-bottom: var(--space-9);
+}
+
+.about-cta-buttons {
+  display: flex;
+  gap: var(--space-6);
+  justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .about-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .about-stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-bio {
+    padding: var(--space-9) 0;
+  }
+
+  .about-bio-inner,
+  .about-influences-list {
+    padding: 0 var(--space-4);
+  }
+
+  .about-bio-text p {
+    font-size: var(--fs-xs);
+  }
+
+  .about-cta {
+    padding: var(--space-9) var(--space-4);
+  }
+
+  .about-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}

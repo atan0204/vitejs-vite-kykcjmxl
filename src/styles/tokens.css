@@ -1,0 +1,94 @@
+/* Design Tokens */
+
+:root {
+  /* Colour */
+  --clr-dark:    #181616;
+  --clr-accent:  #ff3831;
+  --clr-brand:   #e3eada;
+  --clr-white:   #ffffff;
+  --clr-light:   #e8efdf;
+  --clr-muted:   #9c9c9c;
+  --clr-surface: #202020;
+  --clr-divider: rgba(255, 255, 255, 0.15);
+  --clr-card-border: #727272;
+  --clr-input:   #d9d9d9;
+
+  /* Typography */
+  --ff-display: 'PT Serif', serif;
+  --ff-script:  'Island Moments', cursive;
+  --ff-body:    'Inter', system-ui, sans-serif;
+
+  --fs-xs:    0.75rem;
+  --fs-sm:    0.875rem;
+  --fs-base:  1rem;
+  --fs-md:    clamp(0.95rem, 1.45vw, 1.5rem);
+  --fs-lg:    1.25rem;
+  --fs-xl:    clamp(1.15rem, 1.6vw, 2rem);
+  --fs-2xl:   clamp(1.5rem, 2.5vw, 2rem);
+  --fs-3xl:   clamp(2rem, 3.4vw, 3rem);
+  --fs-hero:  clamp(2.5rem, 5vw, 4.5rem);
+  --fs-brand: clamp(2rem, 3vw, 4.5rem);
+
+  --fw-light:    300;
+  --fw-regular:  400;
+  --fw-medium:   500;
+  --fw-semibold: 600;
+  --fw-bold:     700;
+
+  --lh-tight:  1.2;
+  --lh-normal: 1.5;
+  --lh-loose:  1.8;
+
+  /* Spacing (8-pt scale) */
+  --space-1:  0.25rem;   /*  4px */
+  --space-2:  0.5rem;    /*  8px */
+  --space-3:  0.75rem;   /* 12px */
+  --space-4:  1rem;      /* 16px */
+  --space-5:  1.25rem;   /* 20px */
+  --space-6:  1.5rem;    /* 24px */
+  --space-7:  2rem;      /* 32px */
+  --space-8:  2.5rem;    /* 40px */
+  --space-9:  3rem;      /* 48px */
+  --space-10: 4rem;      /* 64px */
+  --space-11: 5rem;      /* 80px */
+  --space-12: 7rem;      /* 112px */
+
+  --container-max: 1302px;
+
+  /* Radii */
+  --radius-sm:   4px;
+  --radius-md:   6px;
+  --radius-lg:   10px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-sm:   0 2px 8px rgba(0, 0, 0, 0.15);
+  --shadow-md:   0 8px 30px rgba(0, 0, 0, 0.28);
+  --shadow-glow: 0 0 20px rgba(255, 56, 49, 0.25);
+
+  /* Motion */
+  --dur-fast: 180ms;
+  --dur-base: 320ms;
+  --dur-slow: 600ms;
+
+  --ease-out:    cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0.01ms;
+    --dur-base: 0.01ms;
+    --dur-slow: 0.01ms;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

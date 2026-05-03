@@ -1,0 +1,120 @@
+/* Contact desks */
+.contact-desks {
+  padding: var(--space-12) var(--space-8);
+}
+
+.contact-desks-grid {
+  display: grid;
+  gap: var(--space-7);
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  max-width: var(--container-max);
+}
+
+.contact-desk {
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-divider);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  transition: border-color var(--dur-fast) var(--ease-out);
+}
+
+.contact-desk:hover {
+  border-color: var(--clr-accent);
+}
+
+.contact-desk-title {
+  color: var(--clr-white);
+  font-family: var(--ff-display);
+  font-size: var(--fs-lg);
+  margin-bottom: var(--space-4);
+}
+
+.contact-desk-desc {
+  color: var(--clr-muted);
+  font-family: var(--ff-body);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-light);
+  line-height: var(--lh-loose);
+  margin-bottom: var(--space-6);
+}
+
+.contact-desk-email {
+  color: var(--clr-accent);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  transition: opacity var(--dur-fast);
+}
+
+.contact-desk-email:hover {
+  opacity: 0.8;
+}
+
+/* Form + Aside layout */
+.contact-main {
+  padding: 0 var(--space-8) var(--space-12);
+}
+
+.contact-main-inner {
+  display: grid;
+  gap: var(--space-11);
+  grid-template-columns: 1fr 20rem;
+  margin: 0 auto;
+  max-width: var(--container-max);
+}
+
+.contact-main-form .section-heading {
+  margin-bottom: var(--space-9);
+  padding: 0;
+}
+
+/* Aside */
+.contact-aside-block {
+  margin-bottom: var(--space-8);
+}
+
+.contact-aside-label {
+  color: var(--clr-accent);
+  font-family: var(--ff-body);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-3);
+  text-transform: uppercase;
+}
+
+.contact-aside-address,
+.contact-aside-text {
+  color: var(--clr-muted);
+  font-family: var(--ff-body);
+  font-size: var(--fs-sm);
+  font-style: normal;
+  line-height: var(--lh-loose);
+}
+
+.contact-aside-social {
+  display: flex;
+  gap: var(--space-4);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .contact-desks-grid {
+    grid-template-columns: 1fr;
+    max-width: 32rem;
+  }
+
+  .contact-main-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-desks {
+    padding: var(--space-9) var(--space-4);
+  }
+
+  .contact-main {
+    padding: 0 var(--space-4) var(--space-9);
+  }
+}

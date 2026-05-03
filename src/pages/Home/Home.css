@@ -1,0 +1,30 @@
+/* Music section */
+.home-music {
+  padding: var(--space-12) 0;
+}
+
+/* Videos section */
+.home-videos {
+  padding: 6rem 0 7rem;
+}
+
+/* Merch section */
+.home-merch {
+  background: var(--clr-dark);
+  padding: 6rem 0 4rem;
+}
+
+/* CTA block */
+.home-section-cta {
+  margin-top: var(--space-7);
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .home-music,
+  .home-videos,
+  .home-merch {
+    padding-top: var(--space-9);
+  }
+}

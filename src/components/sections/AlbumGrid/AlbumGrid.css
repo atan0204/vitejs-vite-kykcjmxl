@@ -1,0 +1,26 @@
+.album-grid {
+  align-items: stretch;
+  display: grid;
+  gap: var(--space-7);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: var(--space-11) auto 0;
+  max-width: 1520px;
+  padding: 0 var(--space-8);
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .album-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: var(--space-7);
+    padding: 0 var(--space-6);
+  }
+}
+
+@media (max-width: 640px) {
+  .album-grid {
+    grid-template-columns: 1fr;
+    margin-top: var(--space-7);
+    padding: 0 var(--space-4);
+  }
+}

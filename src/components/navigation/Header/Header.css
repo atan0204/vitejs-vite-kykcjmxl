@@ -1,0 +1,29 @@
+.site-header {
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 50;
+}
+
+.site-header-inner {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.65rem;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: var(--container-max);
+  padding: 2.5rem 4rem 1.8rem;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .site-header-inner {
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+    padding: 1.1rem 1.5rem;
+    text-align: left;
+  }
+}

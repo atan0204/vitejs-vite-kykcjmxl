@@ -1,4 +1,4 @@
-/* ── Asset paths ─────────────────────────────────────────────── */
+/*  Asset paths  */
 const heroImage          = '/Lana Del Ray Hero image.jpg'
 const featuredAlbumImage = '/Poplar Album Image.jpg'
 const aboutBgImage       = '/About section bg.jpg'
@@ -93,7 +93,7 @@ export const albumCards = [
   },
 ]
 
-/* ── Videos ───────────────────────────────────────────────────── */
+/*  Videos  */
 export const videoCards = [
   { title: 'Complete',            image: '/Top Video image 01.jpg', length: '4:32' },
   { title: 'Honeymoon',           image: '/Top Video image 02.jpg', length: '6:01' },
@@ -106,7 +106,7 @@ export const videoCards = [
   { title: "Doin' Time",          image: '/Top Video image 09.jpg', length: '3:54' },
 ]
 
-/* ── Merch ────────────────────────────────────────────────────── */
+/*  Merch  */
 export const merchItems = [
   { title: 'HONEYMOON: VINYL 2LP',         price: '$38.00', image: '/Merch images/Merch image 01.png' },
   { title: 'BORN TO DIE: VINYL LP',        price: '$33.00', image: '/Merch images/Merch image 02.png' },
@@ -116,7 +116,7 @@ export const merchItems = [
   { title: 'Chemtrails Over the Country',  price: '$36.00', image: '/Merch images/Merch image 06.png' },
 ]
 
-/* ── Social Links ─────────────────────────────────────────────── */
+/* ── Social Links ─ */
 export const socialLinks = [
   { name: 'Facebook',  icon: facebookIcon,  href: 'https://facebook.com' },
   { name: 'Instagram', icon: instagramIcon,  href: 'https://instagram.com' },
@@ -124,7 +124,7 @@ export const socialLinks = [
   { name: 'LinkedIn',  icon: linkedInIcon,   href: 'https://linkedin.com' },
 ]
 
-/* ── Discography timeline (About page) ────────────────────────── */
+/* ── Discography timeline (About page)  */
 export const discography = [
   { year: '2012', title: 'Born to Die',                        note: 'Debut major-label release. Reached #1 in eleven countries.' },
   { year: '2012', title: 'Paradise',                            note: 'Extended play. Nominated for a Grammy Award for Best Pop Vocal Album.' },
@@ -137,7 +137,7 @@ export const discography = [
   { year: '2023', title: 'Did You Know That There\'s a Tunnel Under Ocean Blvd', note: 'Eighth studio album. Featuring gospel-influenced, expansive arrangements.' },
 ]
 
-/* ── Influences (About page) ──────────────────────────────────── */
+/* ── Influences (About page)  */
 export const influences = [
   'Elvis Presley',
   'Amy Winehouse',
@@ -151,7 +151,7 @@ export const influences = [
   'Jeff Buckley',
 ]
 
-/* ── Contact page ─────────────────────────────────────────────── */
+/* ── Contact page ─ */
 export const contactContent = {
   heading: 'Get In Touch',
   intro: 'Have a question, press inquiry, or booking request? Reach out through any of the channels below.',
@@ -181,7 +181,7 @@ export const contactContent = {
   hours: 'Mon \u2013 Fri, 9:00 AM \u2013 6:00 PM PST',
 }
 
-/* ── Background images (for reuse) ────────────────────────────── */
+/* ── Background images (for reuse) ──── */
 export const bgImages = {
   about: aboutBgImage,
   music: musicBgImage,

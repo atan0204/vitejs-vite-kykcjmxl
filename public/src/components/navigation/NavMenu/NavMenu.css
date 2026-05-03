@@ -1,0 +1,66 @@
+/*  Desktop nav  */
+.desktop-nav {
+  display: flex;
+  width: 100%;
+}
+
+.desktop-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-11);
+  justify-content: center;
+  width: 100%;
+}
+
+/*  Hamburger toggle  */
+.menu-toggle {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0.5rem;
+  z-index: 110;
+}
+
+.menu-toggle span {
+  background: var(--clr-brand);
+  border-radius: var(--radius-pill);
+  display: block;
+  height: 3px;
+  width: 1.6rem;
+}
+
+/*  Mobile overlay  */
+.mobile-nav {
+  align-items: center;
+  background: rgba(24, 22, 22, 0.97);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  position: fixed;
+  z-index: 100;
+}
+
+.mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-9);
+  text-align: center;
+}
+
+.mobile-nav-list .nav-link {
+  font-size: var(--fs-2xl);
+}
+
+/*  Responsive: show hamburger, hide desktop nav  */
+@media (max-width: 1024px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}

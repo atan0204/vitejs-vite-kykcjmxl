@@ -1,0 +1,16 @@
+.nav-link {
+  color: var(--clr-white);
+  font-family: var(--ff-body);
+  font-size: 0.95rem;
+  font-weight: var(--fw-regular);
+  letter-spacing: 0.04em;
+  transition: color var(--dur-fast) var(--ease-out);
+}
+
+.nav-link:hover {
+  color: var(--clr-accent);
+}
+
+.nav-link.active {
+  color: var(--clr-accent);
+}

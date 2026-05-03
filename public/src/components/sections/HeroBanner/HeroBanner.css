@@ -1,0 +1,116 @@
+.hero-banner {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 78vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/*  Background image  */
+.hero-banner-bg {
+  inset: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.hero-banner-bg .simpleParallax {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.hero-banner-image {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  width: 100%;
+}
+
+/* ── Gradient overlay ───────────────────────────────────────── */
+.hero-banner-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(24, 22, 22, 0.3) 0%,
+    rgba(24, 22, 22, 0.6) 60%,
+    var(--clr-dark) 100%
+  );
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+/* ── Content ────────────────────────────────────────────────── */
+.hero-banner-content {
+  padding: 8rem var(--space-8) var(--space-12);
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-banner-eyebrow {
+  color: var(--clr-accent);
+  font-family: var(--ff-body);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-medium);
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-4);
+  text-transform: uppercase;
+}
+
+.hero-banner-title {
+  color: var(--clr-white);
+  font-family: var(--ff-display);
+  font-size: var(--fs-hero);
+  font-weight: var(--fw-bold);
+  line-height: 1.1;
+  margin-bottom: var(--space-6);
+}
+
+.hero-banner-subtitle {
+  color: var(--clr-light);
+  font-family: var(--ff-body);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-light);
+  line-height: var(--lh-loose);
+  margin: 0 auto;
+  max-width: 32rem;
+}
+
+/* ── Scroll cue ─────────────────────────────────────────────── */
+.hero-banner-scroll-cue {
+  bottom: var(--space-8);
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.hero-banner-scroll-line {
+  background: var(--clr-accent);
+  display: block;
+  height: 3rem;
+  width: 2px;
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .hero-banner {
+    min-height: 65vh;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-banner {
+    min-height: 55vh;
+  }
+
+  .hero-banner-content {
+    padding-top: 6rem;
+  }
+
+  .hero-banner-title {
+    font-size: 2rem;
+  }
+}

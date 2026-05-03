@@ -1,0 +1,73 @@
+.video-card {
+  cursor: pointer;
+  min-height: 20rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-card > img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+/*  Duration badge  */
+.video-card-duration {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: var(--radius-sm);
+  color: var(--clr-white);
+  font-family: var(--ff-body);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+  padding: 0.2rem 0.5rem;
+  position: absolute;
+  right: 0.75rem;
+  top: 0.75rem;
+  z-index: 2;
+}
+
+/*  Play overlay  */
+.video-card-overlay {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.video-card-play {
+  color: var(--clr-white);
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+/*  Label  */
+.video-card-label {
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.45);
+  bottom: 0;
+  color: #111;
+  font-family: var(--ff-body);
+  font-size: 1.5rem;
+  font-weight: var(--fw-medium);
+  left: 0;
+  padding: 0.8rem 1.25rem;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+
+/*  Responsive  */
+@media (max-width: 1024px) {
+  .video-card {
+    min-height: 13.25rem;
+  }
+
+  .video-card-label {
+    font-size: 0.9rem;
+    padding: 0.55rem 0.9rem;
+  }
+}

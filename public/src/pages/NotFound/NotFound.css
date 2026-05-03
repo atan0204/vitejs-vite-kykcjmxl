@@ -1,0 +1,32 @@
+.not-found {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80vh;
+  padding: var(--space-12) var(--space-8);
+  text-align: center;
+}
+
+.not-found-code {
+  color: var(--clr-accent);
+  font-family: var(--ff-display);
+  font-size: clamp(6rem, 15vw, 12rem);
+  font-weight: var(--fw-bold);
+  line-height: 1;
+  opacity: 0.3;
+}
+
+.not-found-title {
+  font-family: var(--ff-display);
+  font-size: var(--fs-3xl);
+  margin: var(--space-4) 0 var(--space-6);
+}
+
+.not-found-text {
+  color: var(--clr-muted);
+  font-family: var(--ff-body);
+  font-size: var(--fs-base);
+  margin-bottom: var(--space-9);
+  max-width: 28rem;
+}

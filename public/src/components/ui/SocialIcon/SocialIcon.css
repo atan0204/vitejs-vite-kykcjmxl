@@ -1,0 +1,22 @@
+.social-icon {
+  display: block;
+  transition: transform var(--dur-fast) var(--ease-out),
+              filter var(--dur-fast) var(--ease-out);
+}
+
+.social-icon:hover {
+  filter: brightness(1.2);
+}
+
+.social-icon img {
+  display: block;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+@media (max-width: 640px) {
+  .social-icon img {
+    height: 2rem;
+    width: 2rem;
+  }
+}

@@ -1,0 +1,48 @@
+.about-teaser {
+  margin: 0 auto;
+  max-width: var(--container-max);
+  padding: 8rem var(--space-8) 10rem;
+  text-align: center;
+}
+
+.about-teaser-card {
+  margin: 0 auto;
+  max-width: 38rem;
+}
+
+.about-teaser-title {
+  color: var(--clr-white);
+  font-family: var(--ff-display);
+  font-size: var(--fs-3xl);
+  margin-bottom: var(--space-8);
+}
+
+.about-teaser-text {
+  color: var(--clr-light);
+  font-family: var(--ff-body);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-light);
+  line-height: var(--lh-loose);
+  margin-bottom: var(--space-8);
+}
+
+@media (max-width: 1024px) {
+  .about-teaser {
+    padding: var(--space-10) var(--space-6);
+    text-align: left;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-teaser {
+    padding: var(--space-9) var(--space-4);
+  }
+
+  .about-teaser-title {
+    font-size: 1.5rem;
+  }
+
+  .about-teaser-text {
+    font-size: var(--fs-xs);
+  }
+}

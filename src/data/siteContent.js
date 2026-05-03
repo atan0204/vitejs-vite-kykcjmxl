@@ -8,7 +8,7 @@ const instagramIcon      = '/social icons/Instagram.png'
 const twitterIcon        = '/social icons/et_twitter.png'
 const linkedInIcon       = '/social icons/LinkedIn.png'
 
-/* ── Navigation ──────────────────────────────────────────────── */
+/*  Navigation  */
 export const navItems = [
   { label: 'Home',    to: '/' },
   { label: 'About',   to: '/about' },
@@ -17,7 +17,7 @@ export const navItems = [
   { label: 'Contact', to: '/contact' },
 ]
 
-/* ── Hero ────────────────────────────────────────────────────── */
+/*  Hero  */
 export const heroContent = {
   heroImage,
   featuredAlbumImage,
@@ -27,7 +27,7 @@ export const heroContent = {
     'Listen to \u2018Paradise\u2019 available on all streaming platforms. Order the new album on vinyl and CD today!',
 }
 
-/* ── About ───────────────────────────────────────────────────── */
+/*  About  */
 export const aboutContent = {
   bgImage: aboutBgImage,
   title: 'Lana Del Ray',
@@ -47,7 +47,7 @@ export const aboutContent = {
   ],
 }
 
-/* ── Albums ───────────────────────────────────────────────────── */
+/*  Albums  */
 export const albumCards = [
   {
     title: 'Born to Die',
@@ -66,7 +66,7 @@ export const albumCards = [
   {
     title: 'Honeymoon',
     year: 2015,
-    image: '/Album image 2.png',
+    image: '/Honeymoon image.png',
     description:
       'A languid, jazz-infused reverie drifting between old Hollywood decadence and bittersweet devotion.',
   },
@@ -80,14 +80,14 @@ export const albumCards = [
   {
     title: 'Norman F***ing Rockwell!',
     year: 2019,
-    image: '/Album image 3.png',
+    image: '/Norman F___ing Rockwell! image.png',
     description:
       'A masterful, piano-driven meditation on modern love, disillusionment, and the California dream.',
   },
   {
     title: 'Chemtrails Over the Country Club',
     year: 2021,
-    image: '/Album image 2.png',
+    image: '/Chemtrails Over the Country Club image.png',
     description:
       'A pastoral, folk-tinged exploration of friendship, nostalgia, and quiet rebellion.',
   },
